@@ -10,11 +10,11 @@ const connect = require('./mongodb/config');
 
 const userRoute = require('./routes/pages/userRoute');
 
-const addClassRoute = require('./routes/teacher/addClassRoute');
-const addStudentRoute = require('./routes/teacher/addStudentRoute');
-const addSubjectRoute = require('./routes/teacher/addSubjectRoute');
-const addTeacherRoute = require('./routes/teacher/addTeacherRoute');
-const attendanceRoute = require('./routes/teacher/attendanceRoute');
+const addClassRoute = require('./routes/teacher/Classes/addClassRoute');
+const addStudentRoute = require('./routes/teacher/Students/addStudentRoute');
+const addSubjectRoute = require('./routes/teacher/Subjects/addSubjectRoute');
+const addTeacherRoute = require('./routes/teacher/Teachers/addTeacherRoute');
+const attendanceRoute = require('./routes/teacher/Attendances/attendanceRoute');
 
 // dotenv config
 dotenv.config()

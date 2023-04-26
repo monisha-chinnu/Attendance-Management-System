@@ -1,4 +1,4 @@
-const Subject = require("../../models/teacher/addSubjectSchema");
+const Subject = require("../../../models/teacher/Subjects/addSubjectSchema");
 module.exports = {
 
   // post

@@ -1,13 +1,14 @@
-const Student = require("../../models/teacher/addStudentSchema");
+const Teacher = require("../../../models/teacher/Teachers/addTeacherSchema");
 module.exports = {
 
   // post
 
-  addStudentDetails: async (req, res) => {
-    const data = new Student({
+  addTeacherDetails: async (req, res) => {
+    const data = new Teacher({
       FirstName: req.body.FirstName,
       LastName: req.body.LastName,
       Email: req.body.Email,
+      Qualification: req.body.Qualification,
       PhoneNo: req.body.PhoneNo,
       DOB: req.body.DOB,
       BloodGroup: req.body.BloodGroup,
@@ -51,10 +52,10 @@ module.exports = {
 
   //get
 
-  getStudentDetails: async (req, res) => {
+  getTeacherDetails: async (req, res) => {
     try {
-      const student = await Student.find();
-      res.json(student);
+      const teacher = await Teacher.find();
+      res.json(teacher);
     } catch (error) {
       res.status(500).json({ message: error.message });
     }
@@ -63,10 +64,10 @@ module.exports = {
 
   //delete
 
-  deleteStudentDetails: async (req, res) => {
+  deleteTeacherDetails: async (req, res) => {
     try {
-      const student = await Student.findByIdAndDelete(req.params.id);
-      if (!student) throw Error("No user found");
+      const teacher = await Teacher.findByIdAndDelete(req.params.id);
+      if (!teacher) throw Error("No user found");
       res.status(200).json({ success: true });
     } catch (error) {
       res.status(500).json({ message: error.message });
@@ -76,12 +77,13 @@ module.exports = {
 
   //put
 
-  editStudentDetails: async (req, res) => {
+  editTeacherDetails: async (req, res) => {
     try {
-      await Student.findByIdAndUpdate(req.params.id, {
+      await Teacher.findByIdAndUpdate(req.params.id, {
         FirstName: req.body.FirstName,
         LastName: req.body.LastName,
         Email: req.body.Email,
+        Qualification: req.body.Qualification,
         PhoneNo: req.body.PhoneNo,
         DOB: req.body.DOB,
         BloodGroup: req.body.BloodGroup,
@@ -120,10 +122,10 @@ module.exports = {
 
   // get by id
 
-  getidStudentDetails: async (req, res) => {
-    const student = req.params;
+  getidTeacherDetails: async (req, res) => {
+    const teacher = req.params;
     try {
-      const data = await Student.findById(student.id);
+      const data = await Teacher.findById(teacher.id);
       res.status(200).json(data);
     } catch (error) {
       console.log(error.message);

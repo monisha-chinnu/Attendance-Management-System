@@ -1,4 +1,4 @@
-const Class = require("../../models/teacher/addClassSchema");
+const Class = require("../../../models/teacher/Classes/addClassSchema");
 module.exports = {
 
     // post

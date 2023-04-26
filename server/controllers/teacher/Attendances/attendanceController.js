@@ -1,4 +1,4 @@
-const Attendance = require("../../models/teacher/attendanceSchema");
+const Attendance = require("../../../models/teacher/Attendances/attendanceSchema");
 module.exports = {
 
   // post
