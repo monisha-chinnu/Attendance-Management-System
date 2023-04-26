@@ -1,0 +1,110 @@
+class
+
+{
+    "ClassName" : "",
+    "Division" : "",
+    "ClassTeacher" : "",
+    "ClassroomNumber" : "",
+    "ClassCapacity" : ""
+}
+
+subject
+
+{
+    "SubjectName" : "",
+    "SubjectCode" : "",
+    "SubjectTeacher" : "",
+    "BookName" : ""
+}
+
+teacher 
+
+{
+    "FirstName" : "",
+    "LastName" : ""',
+    "Email" : "",
+    "Qualification" : "",
+    "PhoneNo" : "",
+    "DOB" : "",
+    "BloodGroup" : "",
+
+    "CommAddress" : "",
+    "State" : "",
+    "CityORTown" : "",
+    "PINCode" : "",
+
+    "PermAddress" : "",
+    "PState" : "",
+    "PCityORTown" : "",
+    "PPINCode" : ""',
+
+    "FatherName" : "",
+    "FatherPhone" : "",
+    "FatherEmail" : "",
+    "FatherOccupation" : "",
+
+    "MotherName" : "",
+    "MotherPhone" : "",
+    "MotherEmail" : "",
+    "MotherOccupation" : "",
+
+    "JoiningDate" : "",
+    "SelectClass" : "",
+    "Division" : "",
+    "RollNo" : ""
+}
+
+student
+
+{
+    "FirstName" : "",
+    "LastName" : "",
+    "Email" : "",
+    "PhoneNo" : ""',
+    "DOB" : "",
+    "BloodGroup" : "",
+
+    "CommAddress" : "",
+    "State" : "",
+    "CityORTown" : "",
+    "PINCode" : "",
+
+    "PermAddress" : "",
+    "PState" : "",
+    "PCityORTown" : "",
+    "PPINCode" : ""',
+
+    "FatherName" : "",
+    "FatherPhone" : "",
+    "FatherEmail" : "",
+    "FatherOccupation" : "",
+
+    "MotherName" : "",
+    "MotherPhone" : "",
+    "MotherEmail" : "",
+    "MotherOccupation" : "",
+
+    "JoiningDate" : "",
+    "SelectClass" : "",
+    "Division" : "",
+    "RollNo" : ""
+}
+
+attendance
+
+{
+    "Date" : "",
+    "SelectClass" : "",
+    "Division" : "",
+    "Subject" : "",
+    "Period" : ""
+}
+
+sign in & up
+
+{
+    "firstName" : "Monisha",
+    "lastName" : "A",
+    "email" : "monishaa7000@gmail.com",
+    "password" : "Monisha@1"
+}
