@@ -8,7 +8,7 @@ const morgan = require('morgan');
 const app = express()
 const connect = require('./mongodb/config');
 
-const userRoute = require('./routes/userRoute');
+const userRoute = require('./routes/pages/userRoute');
 
 const addClassRoute = require('./routes/teacher/addClassRoute');
 const addStudentRoute = require('./routes/teacher/addStudentRoute');

@@ -1,5 +1,5 @@
 const express = require("express");
-const userController = require("../controllers/userController");
+const userController = require("../../controllers/pages/userController");
 
 const router = express.Router();
 
@@ -14,11 +14,6 @@ const router = express.Router();
     // Verification Token
 
     router.post("/Verifytoken", userController.Verifytoken)
-
-    // Forgot Password
-
-    router.post("/F", userController.F)
-
 
 
 module.exports = router;

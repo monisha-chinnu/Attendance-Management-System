@@ -2,11 +2,11 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 // User model
-const User = require("../models/userSchema");
+const User = require('../../models/pages/userSchema');
 
 // Input validation
-const SignupValidator = require("../validator/signupValidator");
-const SigninValidator = require("../validator/signinValidator");
+const SignupValidator = require("../../validator/signupValidator");
+const SigninValidator = require("../../validator/signinValidator");
 
 module.exports = {
 
